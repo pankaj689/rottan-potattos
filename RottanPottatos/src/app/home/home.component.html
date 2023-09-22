@@ -1,0 +1,86 @@
+<app-header></app-header>
+
+<div class="home-container">
+    <div class="all-movies">
+        <div class="trendingmovies">
+            <div class="top">
+                <h4 class="toptend">Trending Movies</h4>
+                <button class="btn btn-info">View All</button>
+
+            </div>
+            <div class="movie-thumbneil">
+                <div class="movie" *ngFor=" let movies of trendingmovies ">
+                    <div class="cover">
+                        <img [src]="movies.cover" alt="image pic">
+                    </div>
+                    <div class="detail">
+                        <div class="name ">{{movies.name}}</div>
+                        <div class="rating">
+                            <app-star-rating [rating]="movies.rating" [IsReadOnly]="true"></app-star-rating>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="popular-movies">
+                <div class="top">
+                    <h4 class="toptend">popular Movies</h4>
+                    <button class="btn btn-info">View All</button>
+                </div>
+                <div class="movie-thumbneil">
+                    <div class="movie" *ngFor=" let movies of popularmovies_list">
+
+                        <div class="cover">
+                            <img [src]="movies.cover" alt="image pic">
+                        </div>
+                        <div class="detail">
+                            <div class="name ">{{movies.name}}</div>
+                            <div class="rating">
+                                <app-star-rating [rating]="movies.rating" [IsReadOnly]="true"></app-star-rating>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="threatmovies">
+        <div class="popular-movies">
+            <div class="top">
+                <h4 class="toptend">popular Movies</h4>
+                <button class="btn btn-info">View All</button>
+            </div>
+            <div class="movie-thumbneil1">
+                <div class="movie" *ngFor=" let movies of theatermovies_list">
+
+                    <!-- <div class="cover">
+                    <img [src]="movies.cover" alt="image pic">
+                </div> -->
+
+                    <div class="name ">{{movies.name}}</div>
+                    <div class="rating">
+                        <app-star-rating [rating]="movies.rating" [IsReadOnly]="true"></app-star-rating>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>

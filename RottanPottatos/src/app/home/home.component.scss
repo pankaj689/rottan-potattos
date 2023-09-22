@@ -1,0 +1,66 @@
+.p1{
+    border:1px solid red;
+}
+
+.home-container{
+    display: flex;
+    flex-flow: row;
+    .all-movies{
+        width: 75%;
+        height: calc(100vh - 8vh);
+        border: 1px solid red;
+        border-radius: 5px;
+        padding: 20px;
+        font-family: "Roboto",sans-serif;
+
+    }
+    .movie-thumbneil{
+        display: flex;
+        justify-content: space-between;
+        .movie{
+           
+            .cover{
+                img{
+                    //max-height: 10em;
+                    border-radius: 5px;
+                }
+                
+            }
+           
+        }
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+
+        .toptend{
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left: 5px solid red;
+            padding-left: 5px;
+        }
+    }
+
+
+    .threatmovies{
+        width: 25%;
+        height: calc(100vh - 8vh);
+        border: 1px solid red;
+        border-radius: 5px;  
+
+        .movie-thumbneil1{
+            display: flex;
+            flex-flow: column;
+            .movie{
+           
+       display: flex;
+       flex-flow: row;
+             align-items: center; 
+             justify-content: space-between;
+               
+            }
+        }
+    }
+    
+}

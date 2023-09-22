@@ -1,0 +1,42 @@
+<div class="login-container">
+    <img src="assets/image/popcorn.webp" alt="popcorn image" class="sideimg">
+    <div class="logo">Rottan Potatos</div>
+    <div class="desc">
+        Welcome to our curated film recommendation platform, where cinematic delights await you at every click. Are you
+        seeking an adrenaline-pumping action flick, a heartwarming romance, or perhaps an intellectually stimulating
+        thriller? Our expertly curated selection of films covers a vast spectrum of genres and styles, ensuring there's
+        something for every movie enthusiast. Whether you're a casual viewer or a cinephile in search of your next
+        cinematic obsession, we're here to guide you through a world of captivating narratives, mesmerizing
+        performances, and awe-inspiring visuals. Let's embark on a cinematic journey together, discovering the best
+        films that will leave you eagerly awaiting your next movie night
+
+    </div>
+
+    <div class="login-form">
+
+        <!-- <form action="" >
+    <div class="form-group">
+        <label class="email">
+            Email
+        </label>
+        <input type="text" class="form-control">
+    </div>
+
+
+
+</form> -->
+        <div class="form-group">
+            <label for="username">username</label>
+            <input type="text" name="username" class="form-control" placeholder="username" [(ngModel)]="username">
+
+        </div>
+
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" name="password" class="form-control" placeholder="password" [(ngModel)]="password">
+        </div>
+        <div class="error">{{this.error}}</div>
+        <button class="btn btn-primary mrg" (click)="login()">submite</button>
+
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.header-container{
+    width: 100%;
+    height: 8vh;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    .logo{
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        cursor:pointer
+        
+    }
+}
