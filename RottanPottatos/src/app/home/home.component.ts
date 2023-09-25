@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import{HttpClient} from '@angular/common/http'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent {
   trendingmovies:any;
   popularmovies_list :any;
   theatermovies_list:any;
-  constructor( private http:HttpClient){
+  constructor( private http:HttpClient , private _routers:Router){
 
   }
 
@@ -43,6 +44,10 @@ this.theatermovies_list= movies;
 console.log(this.theatermovies_list)
     })
 
+  }
+
+  gotomovies(type:string , id:string){
+    this._routers.navigate(["movie",type,id])
   }
 
 }

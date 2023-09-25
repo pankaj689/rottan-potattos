@@ -10,11 +10,11 @@
             </div>
             <div class="movie-thumbneil">
                 <div class="movie" *ngFor=" let movies of trendingmovies ">
-                    <div class="cover">
+                    <div class="cover" (click)='gotomovies("trendingmovies",movies.id)'>
                         <img [src]="movies.cover" alt="image pic">
                     </div>
                     <div class="detail">
-                        <div class="name ">{{movies.name}}</div>
+                        <div class="name" (click)='gotomovies("trendingmovies",movies.id)'>{{movies.name}}</div>
                         <div class="rating">
                             <app-star-rating [rating]="movies.rating" [IsReadOnly]="true"></app-star-rating>
                         </div>
@@ -32,11 +32,11 @@
                 <div class="movie-thumbneil">
                     <div class="movie" *ngFor=" let movies of popularmovies_list">
 
-                        <div class="cover">
+                        <div class="cover" (click)='gotomovies("popularmovies",movies.id)'>
                             <img [src]="movies.cover" alt="image pic">
                         </div>
                         <div class="detail">
-                            <div class="name ">{{movies.name}}</div>
+                            <div class="name" (click)='gotomovies("popularmovies",movies.id)' >{{movies.name}}</div>
                             <div class="rating">
                                 <app-star-rating [rating]="movies.rating" [IsReadOnly]="true"></app-star-rating>
 
@@ -68,7 +68,7 @@
                     <img [src]="movies.cover" alt="image pic">
                 </div> -->
 
-                    <div class="name ">{{movies.name}}</div>
+                    <div class="name" (click)='gotomovies("theatermovies",movies.id)'>{{movies.name}}</div>
                     <div class="rating">
                         <app-star-rating [rating]="movies.rating" [IsReadOnly]="true"></app-star-rating>
                     </div>

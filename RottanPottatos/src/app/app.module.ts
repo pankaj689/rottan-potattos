@@ -10,14 +10,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
-import{FeatureModule} from "../app/feature/feature.module"
+import{FeatureModule} from "../app/feature/feature.module";
+import { MovieComponent } from './movie/movie.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    MovieComponent
     
   ],
   imports: [
