@@ -1,0 +1,6 @@
+concept use:
+1. Pipes: date
+
+2.created url where json data save in assessts folder is hosted
+3.use of httpclient for fet data from api
+4.created seprate feature module which is comman and can be usable in project
